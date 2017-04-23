@@ -16,7 +16,7 @@ ext {
     siteUrl = 'https://github.com/bhuvan0616/StylishTextView'
     gitUrl = 'https://github.com/bhuvan0616/StylishTextView.git'
 
-    libraryVersion = '1.0'
+    libraryVersion = '1.1'
 
     developerId = 'bhuvan0616'
     developerName = 'Bhuvanesh BS'
@@ -34,8 +34,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
 
     }
     buildTypes {
