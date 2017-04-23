@@ -7,7 +7,7 @@ ext {
     bintrayRepo = 'library'
     bintrayName = 'stylish-text'
 
-    publishedGroupId = 'com.vertace.library'
+    publishedGroupId = 'in.codebreaker.library'
     libraryName = 'StylishText'
     artifact = 'stylish-text'
 
@@ -16,11 +16,11 @@ ext {
     siteUrl = 'https://github.com/bhuvan0616/StylishTextView'
     gitUrl = 'https://github.com/bhuvan0616/StylishTextView.git'
 
-    libraryVersion = '0.1'
+    libraryVersion = '1.0'
 
-    developerId = 'v10068'
+    developerId = 'bhuvan0616'
     developerName = 'Bhuvanesh BS'
-    developerEmail = 'bhuvanesh@vertace.com'
+    developerEmail = 'bhuvan0616@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
