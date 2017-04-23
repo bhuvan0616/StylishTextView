@@ -33,7 +33,7 @@ public final class StylishTextView extends AppCompatTextView {
      */
     private void setFont(AttributeSet attr) {
         if (attr != null) {
-            TypedArray typedArray = getContext().obtainStyledAttributes(attr, R.styleable.StylishTextview);
+            TypedArray typedArray = getContext().obtainStyledAttributes(attr, R.styleable.StylishTextView);
             String fontName = typedArray.getString(R.styleable.StylishTextView_font);
             if (fontName != null) {
                 try {
