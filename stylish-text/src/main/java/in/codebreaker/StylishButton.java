@@ -1,28 +1,28 @@
 package in.codebreaker;
 
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatEditText;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
-
 
 /**
  * Created by Bhuvanesh on 4/23/2017.
  * Created for Cakon
  */
 
-public final class StylishEditText extends AppCompatEditText {
-    public StylishEditText(Context context) {
+public final class StylishButton extends AppCompatButton {
+    public StylishButton(Context context) {
         super(context);
     }
 
-    public StylishEditText(Context context, AttributeSet attrs) {
+    public StylishButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         setFont(attrs);
     }
 
-    public StylishEditText(Context context, AttributeSet attrs, int defStyleAttr) {
+    public StylishButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setFont(attrs);
     }
@@ -34,8 +34,8 @@ public final class StylishEditText extends AppCompatEditText {
      */
     private void setFont(AttributeSet attr) {
         if (attr != null) {
-            TypedArray typedArray = getContext().obtainStyledAttributes(attr, R.styleable.StylishEditText);
-            String fontName = typedArray.getString(R.styleable.StylishEditText_font);
+            TypedArray typedArray = getContext().obtainStyledAttributes(attr, R.styleable.StylishButton);
+            String fontName = typedArray.getString(R.styleable.StylishButton_font);
             if (fontName != null) {
                 try {
                     Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/" + fontName + ".ttf");
@@ -47,5 +47,4 @@ public final class StylishEditText extends AppCompatEditText {
             typedArray.recycle();
         }
     }
-
 }
